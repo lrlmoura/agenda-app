@@ -1,0 +1,85 @@
+[debug] [2024-02-22T02:36:33.539Z] ----------------------------------------------------------------------
+[debug] [2024-02-22T02:36:33.543Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\lrlmo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-02-22T02:36:33.544Z] CLI Version:   13.3.0
+[debug] [2024-02-22T02:36:33.544Z] Platform:      win32
+[debug] [2024-02-22T02:36:33.544Z] Node Version:  v20.11.0
+[debug] [2024-02-22T02:36:33.544Z] Time:          Wed Feb 21 2024 23:36:33 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-02-22T02:36:33.544Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-22T02:36:33.548Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-22T02:36:33.718Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-22T02:36:33.718Z] > authorizing via signed-in user (lrlmoura@gmail.com)
+[debug] [2024-02-22T02:36:33.719Z] [iam] checking project teste-agenda-app for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-02-22T02:36:33.720Z] > refreshing access token with scopes: []
+[debug] [2024-02-22T02:36:33.721Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-22T02:36:33.721Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-22T02:36:33.959Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-22T02:36:33.959Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-22T02:36:33.975Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teste-agenda-app:testIamPermissions [none]
+[debug] [2024-02-22T02:36:33.975Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teste-agenda-app:testIamPermissions x-goog-quota-user=projects/teste-agenda-app
+[debug] [2024-02-22T02:36:33.975Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teste-agenda-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-22T02:36:34.034Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-22T02:36:34.035Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-22T02:36:34.896Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/teste-agenda-app:testIamPermissions 200
+[debug] [2024-02-22T02:36:34.897Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teste-agenda-app:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-02-22T02:36:34.898Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teste-agenda-app [none]
+[debug] [2024-02-22T02:36:35.349Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/teste-agenda-app 200
+[debug] [2024-02-22T02:36:35.350Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/teste-agenda-app {"projectId":"teste-agenda-app","projectNumber":"618833171650","displayName":"Teste-Agenda-app","name":"projects/teste-agenda-app","resources":{"hostingSite":"teste-agenda-app"},"state":"ACTIVE","etag":"1_e864e490-cda8-428d-811c-98789e77073f"}
+[debug] [2024-02-22T02:36:40.655Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites pageToken=&pageSize=10
+[debug] [2024-02-22T02:36:42.108Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites 200
+[debug] [2024-02-22T02:36:42.109Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites {"sites":[{"name":"projects/teste-agenda-app/sites/teste-agenda-app","defaultUrl":"https://teste-agenda-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-22T02:36:42.112Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites 
+[debug] [2024-02-22T02:36:42.661Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites 200
+[debug] [2024-02-22T02:36:42.662Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites {"sites":[{"name":"projects/teste-agenda-app/sites/teste-agenda-app","defaultUrl":"https://teste-agenda-app.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-02-22T02:36:42.662Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teste-agenda-app/webApps/-/config [none]
+[debug] [2024-02-22T02:36:43.546Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/teste-agenda-app/webApps/-/config 200
+[debug] [2024-02-22T02:36:43.547Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/teste-agenda-app/webApps/-/config {"projectId":"teste-agenda-app","appId":"1:618833171650:web:03e95c5cfb8509a218575b","storageBucket":"teste-agenda-app.appspot.com","apiKey":"AIzaSyC1L4ce-NhGfoG_cDRF1mfvIedbruPxN7k","authDomain":"teste-agenda-app.firebaseapp.com","messagingSenderId":"618833171650","measurementId":"G-WXB5HNMBBN"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-02-22T02:36:55.400Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites/teste-agenda-app [none]
+[debug] [2024-02-22T02:36:56.571Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites/teste-agenda-app 200
+[debug] [2024-02-22T02:36:56.571Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/teste-agenda-app/sites/teste-agenda-app {"name":"projects/teste-agenda-app/sites/teste-agenda-app","defaultUrl":"https://teste-agenda-app.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] 🌼   daisyUI 4.7.2
+
+[info] ├─ ✔︎ 3 themes added		https://daisyui.com/docs/themes
+
+[info] ╰─ ★ Star daisyUI on GitHub	https://github.com/saadeghi/daisyui
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] ./app/components/Footer.tsx:2:25
+Type error: Cannot find module './ThemeSwitch' or its corresponding type declarations.
+
+  1 | import React from "react";
+> 2 | import ThemeSwitch from "./ThemeSwitch";
+    |                         ^
+  3 |
+  4 | const Footer = () => {
+  5 |   return (
+
+[debug] [2024-02-22T02:37:31.187Z] Error: ENOENT: no such file or directory, open 'D:\Desenvolvimento\next-app\next-app\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
