@@ -1,13 +1,14 @@
 import React from "react";
+import LoginBar from "./LoginBar";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 navbar bg-base-100">
+    <div className="sticky top-0 navbar bg-base-300 ">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl" href="./">Agenda</a>
+        <a className="btn btn-ghost text-xl text-base-content" href="./">Agenda</a>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal text-base-content">
           <li>
             <details>
               <summary>Sobre</summary>
@@ -21,13 +22,9 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
-          <li>
-            <a className="btn btn-primary">Login</a>
-          </li>
-          <li>
-            <a className="btn ">Registre-se aqui</a>
-          </li>
         </ul>
+          <LoginBar />
+        
       </div>
     </div>
   );
