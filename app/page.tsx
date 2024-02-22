@@ -20,7 +20,7 @@ export default function Home() {
       
       <br/>
       <br/>
-      <h2 className='p-10 text-4xl font-extrabold' >Quer ser minha CMO?</h2>
+      <h2 className='p-10 text-4xl font-extrabold' >Quer ser minha Esposa?</h2>
 
       <br/>
       <br/>
